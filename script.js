@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const timeoutId = setTimeout(() => controller.abort(), 5000);
     
         try {
-            const response = await fetch('https://d089-2405-4802-79dd-33c0-3871-9055-2d36-30c6.ngrok-free.app/status', { signal: controller.signal });
+            const response = await fetch('https://d089-2405-4802-79dd-33c0-3871-9055-2d36-30c6.ngrok-free.app', { signal: controller.signal });
             clearTimeout(timeoutId);
     
             if (!response.ok) {
