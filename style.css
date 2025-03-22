@@ -14,9 +14,9 @@
     --typewriter-margin-top: 10px;
     --typewriter-margin-bottom: 20px;
     --typewriter-line-height: 1.5;
-    --logo-size: 24px; /* Giảm 20% từ 30px */
-    --discord-logo-size: 20px; /* Giảm 20% từ 25px */
-    --discord-status-color: #db8ff1be; /* Màu mặc định cho "Discord Status:" */
+    --logo-size: 24px; 
+    --discord-logo-size: 20px; 
+    --discord-status-color: #db8ff1be; 
 }
 
 body {
@@ -231,7 +231,6 @@ body {
     100% { opacity: 1; }
 }
 
-/* Logo mạng xã hội với hình ảnh */
 .social-icons {
     display: flex;
     justify-content: center;
