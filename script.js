@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     statusColor = 'color: #FFFFFF';
             }
     
-            let activityInfo = 'Không Có Hoạt Động Nào Đang Diễn Ra';
+            let activityInfo = 'Not Connected';
             let gameAvatarUrl = null; 
             let playTime = '(00:00:00)';
     
@@ -159,8 +159,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('discord-status').innerHTML = `
                 <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
                     <div>
-                        <div style="color: #FF0000">${discordLogo} Offline</div>
-                        <div>Không Có Hoạt Động Nào Đang Diễn Ra</div>
+                        <div style="color: #FF0000">${discordLogo} Error</div>
+                        <div>Not Connected</div>
                     </div>
                 </div>
             `;
