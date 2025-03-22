@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
     
             let activityInfo = 'Không Có Hoạt Động Nào Đang Diễn Ra';
-            let gameAvatarUrl = null; // Không đặt giá trị mặc định cho gameAvatarUrl
+            let gameAvatarUrl = null; 
             let playTime = '(00:00:00)';
     
             if (activities.length > 0) {
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const largeImage = activity.largeImage;
                     if (largeImage.startsWith('mp:external')) {
                         const imagePath = largeImage.split('/').slice(2).join('/');
-                        gameAvatarUrl = `https://${imagePath}`; // Tải trực tiếp từ GitHub
+                        gameAvatarUrl = `https://${imagePath}`; 
                     } else if (activity.applicationId) {
                         gameAvatarUrl = `https://cdn.discordapp.com/app-assets/${activity.applicationId}/${largeImage}.png`;
                     } else {
@@ -131,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
     
             const discordStatus = document.getElementById('discord-status');
-            // Chỉ hiển thị hình ảnh nếu có gameAvatarUrl (tức là có hoạt động và có ảnh)
             if (gameAvatarUrl) {
                 discordStatus.innerHTML = `
                     <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
